@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:id="@+id/student_admission_form"
+    tools:context="StudentInterface.StudentPersonalInformation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_admission_form"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- School Year -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/school_year"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_school_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_school_year"
+            android:inputType="text" />
+
+
+        <!-- Grade Level -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade_level"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+        <Spinner
+            android:id="@+id/sp_grade_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade_level" />
+
+
+
+        <!-- Learner Reference Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learner_reference_number_lrn"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp"/>
+        <EditText
+            android:id="@+id/et_lrn_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_lrn"
+            android:inputType="number" />
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_student_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/last_name2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_student_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/first_name2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_student_middle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/middle_name2"
+                android:inputType="textPersonName" />
+
+
+
+        </LinearLayout>
+
+        <!-- Extension Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extension_name_e_g_jr_iii"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/et_extension_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/extension_name_if_applicable"
+            android:inputType="textPersonName" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+
+            <!-- Birth Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birth_date"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="4dp"/>
+            <EditText
+                android:id="@+id/et_birth_date"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="MM/DD/YY"
+                android:focusable="false"
+                android:inputType="none" />
+
+            <!-- Age -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="4dp"/>
+
+            <EditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="number"
+                tools:ignore="LabelFor" />
+
+
+
+        </LinearLayout>
+
+
+        <!-- Sex -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+
+
+        </RadioGroup>
+
+
+        <!-- Place of Birth -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/place_of_birth_municipality_city"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/et_place_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_place_of_birth"
+            android:inputType="textPersonName" />
+
+        <!-- Religion -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/religion"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+        <EditText
+            android:id="@+id/et_religion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_religion"
+            android:inputType="textPersonName" />
+
+        <!-- Mother Tongue -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mother_tongue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+        <EditText
+            android:id="@+id/et_mother_tongue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_mother_tongue"
+            android:inputType="textPersonName" />
+
+
+
+
+
+        <!-- IP Community Y/N -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belonging_to_an_indigenous_peoples_ip_community"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_ip_NO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+        <CheckBox
+            android:id="@+id/cb_ip_YES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_specify_below2" />
+
+        <!-- Appears when u tap YES -->
+        <EditText
+            android:id="@+id/et_ip_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/specify_indigenous_community"
+            android:visibility="gone"
+            android:inputType="text" />
+
+
+        <!-- 4PS Y/N -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is_your_family_a_4ps_beneficiary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+        <CheckBox
+            android:id="@+id/cb_4ps_NO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+
+        <CheckBox
+            android:id="@+id/cb_4ps_YES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_specify_household_number_below" />
+
+        <!-- Appears when u tap YES -->
+
+        <EditText
+            android:id="@+id/et_4ps_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_4ps_household_number"
+            android:visibility="gone"
+            android:inputType="number" />
+
+        <!-- Is the child a Learner with Disability? -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is the child a Learner with Disability?"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_disability_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+        <CheckBox
+            android:id="@+id/cb_disability_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, specify below" />
+
+        <!-- Appears when you tap YES for Disability -->
+        <EditText
+            android:id="@+id/et_disability_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specify Disability"
+            android:visibility="gone"
+            android:inputType="text" />
+
+        <!-- Group for Special Needs and PWD ID Sections -->
+        <LinearLayout
+            android:id="@+id/group_special_needs_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Is the Learner Under the Special Needs Education Program? -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is the Learner Under the Special Needs Education Program?"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp" />
+
+            <CheckBox
+                android:id="@+id/cb_special_needs_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <CheckBox
+                android:id="@+id/cb_special_needs_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes, specify below" />
+
+            <!-- Appears when you tap YES for Special Needs -->
+            <EditText
+                android:id="@+id/et_special_needs_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Specify Special Needs Program"
+                android:visibility="gone"
+                android:inputType="text" />
+
+            <!-- Does the Learner have a PWD ID? -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does the Learner have a PWD ID?"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp" />
+
+            <CheckBox
+                android:id="@+id/cb_pwd_id_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <CheckBox
+                android:id="@+id/cb_pwd_id_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes, specify below" />
+
+            <!-- Appears when you tap YES for PWD ID -->
+            <EditText
+                android:id="@+id/et_pwd_id_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Specify PWD ID Number"
+                android:visibility="gone"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+
+
+
+        <!-- Current Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_address_1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_current_house_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/house_number_1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_current_street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/street_name_1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_current_barangay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/barangay_1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_current_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/municipality_city_1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_current_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/province_1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_current_zip_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zip_code_1"
+            android:inputType="number" />
+
+        <!-- Same Address Checkbox -->
+        <!-- if YES then the inputs on the Current Address will be the
+         same also on Permanent Address   -->
+
+        <CheckBox
+            android:id="@+id/cb_same_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permanent_address_same_as_current_address" />
+
+
+        <!-- Permanent Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permanent_address"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_permanent_house_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/house_number"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_permanent_street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/street_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_permanent_barangay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/barangay"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_permanent_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/municipality_city"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_permanent_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/province"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_permanent_zip_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zip_code"
+            android:inputType="number" />
+
+        <!-- Parents' Information -->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parents_information"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="24dp" />
+
+        <!-- Father's Information -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/father_s_name_and_contact_number"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="14dp"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_father_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name1"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_father_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name1"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_father_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/middle_name1"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_father_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_number"
+            android:layout_marginStart="12dp"
+            android:inputType="phone" />
+
+        <!-- Mother's Information -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mother_s_maiden_name_and_contact_number"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="14dp"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_mother_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name4"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_mother_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name4"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_mother_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/middle_name4"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_mother_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_number1"
+            android:layout_marginStart="12dp"
+            android:inputType="phone" />
+
+        <!-- Guardian Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardian_information_if_applicable"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="24dp" />
+
+
+
+        <EditText
+            android:id="@+id/et_guardian_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name3"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_guardian_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name3"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_guardian_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/middle_name3"
+            android:layout_marginStart="12dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_guardian_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/guardian_s_relationship_to_learner_e_g_uncle_aunt"
+            android:layout_marginStart="12dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_guardian_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/guardian_s_contact_number"
+            android:layout_marginStart="12dp"
+            android:inputType="phone" />
+
+        <!-- For Returning Learner -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For Returning Learner (Balik-Aral) and those who will Transfer/Move in"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="24dp" />
+
+        <EditText
+            android:id="@+id/et_last_grade_level_completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Grade Level Completed"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_last_school_year_completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last School Year Completed"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_last_school_attended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last School Attended"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_school_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="School ID"
+            android:inputType="number" />
+
+        <!-- For Learner in Senior High School -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For Learner in Senior High School"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester"
+            android:textStyle="bold"
+            android:layout_marginStart="14dp"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_1st_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="1st" />
+
+        <CheckBox
+            android:id="@+id/cb_2nd_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="2nd" />
+
+        <EditText
+            android:id="@+id/et_senior_high_track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Track"
+            android:layout_marginStart="14dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_senior_high_strand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Strand"
+            android:layout_marginStart="14dp"
+            android:inputType="number" />
+
+
+
+        <!-- Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="16dp">
+
+
+
+
+
+            <!-- Continue Button -->
+            <Button
+                android:id="@+id/btn_admission_form_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/continue_admission_form"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <!-- Profile Verification Link -->
+        <TextView
+            android:id="@+id/textview_back_to_profile_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_go_back_to_profile_verification_click_here"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

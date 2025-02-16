@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SNHSLink"
+        tools:targetApi="31">
+        <activity
+            android:name="StudentInterface.TestActivity"
+            android:exported="false">
+
+
+        </activity>
+        <activity
+            android:name="StudentInterface.PleaseWaitForConfirmation"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name="AdminInterface.ListOfStudentApplications"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="AdminInterface.AdminLogin"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="StudentInterface.StudentApplicationStatus"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="StudentInterface.StudentPersonalInformation"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="StudentInterface.UploadStudentDocuments"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="StudentInterface.ProfileVerification"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="StudentInterface.StudentLogin"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" >
+
+
+
+        </activity>
+        <activity
+            android:name="StudentInterface.StudentRegister"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="StudentInterface.IntroPage"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="StudentInterface.ChooseStudentOrAdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+    </application>
+
+</manifest>

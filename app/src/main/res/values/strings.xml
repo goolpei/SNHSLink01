@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">SNHSLink</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register2">REGISTER</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="login">Login</string>
+    <string name="login2">LOGIN</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="profile_verification">Profile Verification</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="enter_your_middle_name">Enter your middle name</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="select_your_birthdate">Select your birthdate</string>
+    <string name="last_school_attended">Last School Attended</string>
+    <string name="enter_the_school_you_last_attended">Enter the school you last attended</string>
+    <string name="strand">Strand</string>
+    <string name="clear_entries">Clear Entries</string>
+    <string name="continue2">Continue</string>
+    <string name="to_go_to_login_page_click_here">To go to login page, click here</string>
+    <string name="choose_strand">Choose Strand</string>
+    <string name="choose_sagay_shs_strand">Choose Sagay SHS Strand</string>
+    <string name="select_user">Select User</string>
+    <string name="student">Student</string>
+    <string name="admin">Admin</string>
+    <string name="welcome_to_campuslink">Welcome to CampusLink!</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="to_go_back_to_register_page_click_here">To go back to register page, click here</string>
+    <string name="select_userbig">SELECT USER</string>
+    <string name="clear_entries_admission_form">Clear Entries</string>
+    <string name="continue_admission_form">Continue</string>
+    <string name="guardian_s_contact_number">Guardian\'s Contact Number</string>
+    <string name="guardian_s_relationship_to_learner_e_g_uncle_aunt">Guardian\'s Relationship to Learner (e.g., Uncle, Aunt)</string>
+    <string name="guardian_s_name">Guardian\'s Name</string>
+    <string name="guardian_information_if_applicable">Guardian Information (if applicable)</string>
+    <string name="mother_s_contact_number">Mother\'s Contact Number</string>
+    <string name="mother_s_maiden_name">Mother\'s Maiden Name</string>
+    <string name="father_s_contact_number">Father\'s Contact Number</string>
+    <string name="father_s_name">Father\'s Name</string>
+    <string name="parents_information">Parents\' Information</string>
+    <string name="zip_code">ZIP Code</string>
+    <string name="province">Province</string>
+    <string name="municipality_city">Municipality/City</string>
+    <string name="barangay">Barangay</string>
+    <string name="street_name">Street Name</string>
+    <string name="house_number">House Number</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="permanent_address_same_as_current_address">Permanent Address Same as Current Address</string>
+    <string name="zip_code_1">ZIP Code</string>
+    <string name="province_1">Province</string>
+    <string name="municipality_city_1">Municipality/City</string>
+    <string name="barangay_1">Barangay</string>
+    <string name="street_name_1">Street Name</string>
+    <string name="house_number_1">House Number</string>
+    <string name="current_address_1">Current Address</string>
+    <string name="specify_disability">Specify Disability</string>
+    <string name="yes_specify_below">Yes, specify below</string>
+    <string name="no">No</string>
+    <string name="is_the_child_a_learner_with_disability">Is the child a Learner with Disability?</string>
+    <string name="yes_specify_household_number_below">Yes, specify Household Number below</string>
+    <string name="enter_4ps_household_number">Enter 4Ps Household Number</string>
+    <string name="is_your_family_a_4ps_beneficiary">Is your family a 4Ps beneficiary?</string>
+    <string name="specify_indigenous_community">Specify Indigenous Community</string>
+    <string name="yes_specify_below2">Yes, specify below</string>
+    <string name="belonging_to_an_indigenous_peoples_ip_community">Belonging to an Indigenous Peoples (IP) Community?</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="grade_level">Grade Level</string>
+    <string name="enter_place_of_birth">Enter Place of Birth</string>
+    <string name="place_of_birth_municipality_city">Place of Birth (Municipality/City)</string>
+    <string name="age">Age</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="extension_name_if_applicable">Extension Name (if applicable)</string>
+    <string name="extension_name_e_g_jr_iii">Extension Name (e.g., Jr., III)</string>
+    <string name="last_name2">Last Name</string>
+    <string name="middle_name2">Middle Name</string>
+    <string name="first_name2">First Name</string>
+    <string name="name">Name</string>
+    <string name="enter_lrn">Enter LRN</string>
+    <string name="learner_reference_number_lrn">Learner Reference Number (LRN)</string>
+    <string name="enter_school_year">Enter School Year</string>
+    <string name="school_year">School Year</string>
+    <string name="student_admission_form">Student Admission Form</string>
+    <string name="sex">Sex</string>
+    <string name="religion">Religion</string>
+    <string name="enter_religion">Enter Religion</string>
+    <string name="mother_tongue">Mother Tongue</string>
+    <string name="enter_mother_tongue">Enter Mother Tongue</string>
+    <string name="to_go_back_to_profile_verification_click_here">To go back to profile verification, click here.</string>
+    <string name="middle_name3">Middle Name</string>
+    <string name="first_name3">First Name</string>
+    <string name="last_name3">Last Name</string>
+    <string name="father_s_name_and_contact_number">Father\'s Name and Contact Number</string>
+    <string name="last_name1">Last Name</string>
+    <string name="first_name1">First Name</string>
+    <string name="middle_name1">Middle Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="mother_s_maiden_name_and_contact_number">Mother\'s Maiden Name and Contact Number</string>
+    <string name="last_name4">Last Name</string>
+    <string name="first_name4">First Name</string>
+    <string name="middle_name4">Middle Name</string>
+    <string name="contact_number1">Contact Number</string>
+
+
+    <string-array name="strand_options">
+        <item>STEM</item>
+        <item>GAS</item>
+        <item>ARTS AND DESIGN</item>
+    </string-array>
+
+    <string-array name="grade_level">
+        <item>10</item>
+    </string-array>
+
+</resources>

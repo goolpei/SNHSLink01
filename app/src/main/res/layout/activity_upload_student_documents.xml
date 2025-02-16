@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context="StudentInterface.UploadStudentDocuments"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/title_upload_documents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Documents"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Grade 10 School Report Card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grade 10 School Report Card (SF9)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/upload_report_card_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:background="@drawable/upload_background"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/upload_icon_report_card"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Upload icon"
+                android:src="@drawable/ic_upload" />
+
+            <ProgressBar
+                android:id="@+id/loading_report_card"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:layout_marginTop="2.5dp"
+                style="?android:attr/progressBarStyleSmall" />
+
+            <TextView
+                android:id="@+id/status_text_report_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to upload"
+                android:layout_toEndOf="@id/upload_icon_report_card"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"/>
+        </RelativeLayout>
+
+
+        <!-- Birth Certificate -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birth Certificate"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/upload_birth_certificate_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:background="@drawable/upload_background"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/upload_icon_birth_certificate"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Upload icon"
+                android:src="@drawable/ic_upload" />
+
+            <ProgressBar
+                android:id="@+id/loading_birth_certificate"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:layout_marginTop="2.5dp"
+                style="?android:attr/progressBarStyleSmall" />
+
+            <TextView
+                android:id="@+id/status_text_birth_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to upload"
+                android:layout_toEndOf="@id/upload_icon_birth_certificate"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"/>
+        </RelativeLayout>
+
+        <!-- I.D. Picture -->
+        <!-- needs to be coded -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I.D. Picture (2×2)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/upload_id_picture_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:background="@drawable/upload_background"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/upload_icon_id_picture"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Upload icon"
+                android:src="@drawable/ic_upload" />
+
+            <ProgressBar
+                android:id="@+id/loading_id_picture"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:layout_marginTop="2.5dp"
+                style="?android:attr/progressBarStyleSmall" />
+
+            <TextView
+                android:id="@+id/status_text_id_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to upload"
+                android:layout_toEndOf="@id/upload_icon_id_picture"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"/>
+
+
+        </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/button_submit_documents"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SUBMIT"
+        android:textSize="15sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Admission Form Link -->
+    <TextView
+        android:id="@+id/textview_back_to_admission_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To go back to the admission form, click here."
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:paddingBottom="40dp"/>
+
+
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
