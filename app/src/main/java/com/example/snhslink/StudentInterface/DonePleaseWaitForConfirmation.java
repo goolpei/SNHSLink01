@@ -1,4 +1,4 @@
-package StudentInterface;
+package com.example.snhslink.StudentInterface;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,10 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.snhslink.BaseActivity;
 import com.example.snhslink.R;
 
-public class PleaseWaitForConfirmation extends AppCompatActivity {
+public class DonePleaseWaitForConfirmation extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +37,13 @@ public class PleaseWaitForConfirmation extends AppCompatActivity {
         // Login button
         goToLoginButton.setOnClickListener(v -> {
             // Navigate to the login page
-            Intent intent = new Intent(PleaseWaitForConfirmation.this, StudentLogin.class);
+            Intent intent = new Intent(DonePleaseWaitForConfirmation.this, StudentLogin.class);
             startActivity(intent);
         });
     }
     private void navigateToSelectUserPage() {
         // Intent to navigate to the SelectUser activity
-        Intent intent = new Intent(PleaseWaitForConfirmation.this, ChooseStudentOrAdminActivity.class);
+        Intent intent = new Intent(DonePleaseWaitForConfirmation.this, ChooseStudentOrAdminActivity.class);
         startActivity(intent);
     }
 }

@@ -1,4 +1,4 @@
-package StudentInterface;
+package com.example.snhslink.StudentInterface;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,10 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.snhslink.BaseActivity;
 import com.example.snhslink.R;
 
-public class IntroPage extends AppCompatActivity {
+public class IntroPage extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Section: Application Status -->
+        <TextView
+            android:text="Application Status"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_application_status"
+            android:text="Pending"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Section: Basic Information -->
+        <TextView
+            android:text="Basic Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView android:text="Full Name:" />
+                <TextView android:id="@+id/textview_full_name" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Email:" />
+                <TextView android:id="@+id/textview_email" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Mobile:" />
+                <TextView android:id="@+id/textview_mobile" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Strand:" />
+                <TextView android:id="@+id/textview_strand" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Section: Personal Information -->
+        <TextView
+            android:text="Personal Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView android:text="School Year to Enroll:" />
+                <TextView android:id="@+id/textview_school_year" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Current Grade Level:" />
+                <TextView android:id="@+id/textview_grade_level" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="General Weighted Average (G.W.A.):" />
+                <TextView android:id="@+id/textview_gwa" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Birthdate:" />
+                <TextView android:id="@+id/textview_birthdate" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Age:" />
+                <TextView android:id="@+id/textview_age" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Gender:" />
+                <TextView android:id="@+id/textview_gender" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="LRN Number:" />
+                <TextView android:id="@+id/textview_lrn" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Place of Birth:" />
+                <TextView android:id="@+id/textview_birth_place" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Religion:" />
+                <TextView android:id="@+id/textview_religion"/>
+            </TableRow>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <!-- IP Community -->
+
+            <TableRow>
+                <TextView android:text="IP Community Member:" />
+                <TextView android:id="@+id/textview_ip_community" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="IP Community Details:" />
+                <TextView android:id="@+id/textview_ip_details" />
+            </TableRow>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <!-- fourPs -->
+
+            <TableRow>
+                <TextView android:text="4Ps Beneficiary:" />
+                <TextView android:id="@+id/textview_fourps" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="4Ps Number:" />
+                <TextView android:id="@+id/textview_fourps_number" />
+            </TableRow>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <!-- learnerWithDisability -->
+
+            <TableRow>
+                <TextView android:text="Learner With Disability:" />
+                <TextView android:id="@+id/textview_learner_with_disability" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Disability Details:" />
+                <TextView android:id="@+id/textview_disability_details" />
+            </TableRow>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <!-- specialNeeds -->
+
+            <TableRow>
+                <TextView android:text="Under Special Needs Education Program:" />
+                <TextView android:id="@+id/textview_special_needs" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Special Needs Program:" />
+                <TextView android:id="@+id/textview_special_needs_details" />
+            </TableRow>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <!-- PWD -->
+
+            <TableRow>
+                <TextView android:text="Has PWD ID:" />
+                <TextView android:id="@+id/textview_pwd_id" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="PWD ID Number:" />
+                <TextView android:id="@+id/textview_pwd_id_number" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <!-- Section: Address -->
+        <TextView
+            android:text="Address"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView android:text="Current Address:" />
+                <TextView android:id="@+id/textview_current_address" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Current Zip:" />
+                <TextView android:id="@+id/textview_current_zip" />
+            </TableRow>
+
+
+            <TableRow>
+                <TextView android:text="Permanent Address:" />
+                <TextView android:id="@+id/textview_permanent_address" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Permanent Zip:" />
+                <TextView android:id="@+id/textview_permanent_zip" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Section: Family Info -->
+        <TextView
+            android:text="Family Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView android:text="Father:" />
+                <TextView android:id="@+id/textview_father_name" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Father Contact No.:" />
+                <TextView android:id="@+id/textview_father_contact" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Mother:" />
+                <TextView android:id="@+id/textview_mother_name" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Mother Contact No.:" />
+                <TextView android:id="@+id/textview_mother_contact" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Guardian:" />
+                <TextView android:id="@+id/textview_guardian_name" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Guardian Contact No.:" />
+                <TextView android:id="@+id/textview_guardian_contact" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Guardian Relationship:" />
+                <TextView android:id="@+id/textview_guardian_relationship" />
+            </TableRow>
+        </TableLayout>
+
+
+        <!-- Section: Family Info -->
+        <TextView
+            android:text="Transferee / Returning Learner"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView android:text="Last Grade Completed:" />
+            <TextView android:id="@+id/textview_last_grade_completed" />
+        </TableRow>
+
+
+            <TableRow>
+                <TextView android:text="Last School Year Completed:" />
+                <TextView android:id="@+id/textview_last_school_year_completed" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Last School Attended:" />
+                <TextView android:id="@+id/textview_last_school_attended" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="School ID:" />
+                <TextView android:id="@+id/textview_school_id" />
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+        <!-- Section: Uploaded Documents -->
+        <TextView
+            android:text="Uploaded Documents"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="Birth Certificate:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageview_birth_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop" />
+
+        <TextView android:text="Report Card (Front):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageview_report_card_front"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop" />
+
+        <TextView android:text="Report Card (Back):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageview_report_card_back"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop" />
+
+        <TextView android:text="I.D. Picture:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageview_id_picture"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Approve & Reject Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+            <Button
+                android:id="@+id/button_approve"
+                android:text="Approve"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="11dp"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button_reject"
+                android:text="Reject"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/red" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:text="Back"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

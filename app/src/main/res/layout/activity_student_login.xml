@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="25dp"
-    tools:context="StudentInterface.StudentLogin">
+    tools:context=".StudentInterface.StudentLogin">
 
     <TextView
         android:layout_width="match_parent"
@@ -21,23 +22,26 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
+        app:boxStrokeColor="@color/blue"
         android:layout_height="wrap_content">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/login_email_student"
-            android:hint="@string/email"/>
+            android:id="@+id/login_username_student"
+            android:hint="Username"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/blue"
+        app:endIconMode="password_toggle">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/login_password_student"
-
+            android:inputType="textPassword"
             android:hint="@string/password"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -46,13 +50,15 @@
         android:id="@+id/progressBar"
         android:visibility="gone"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:text="@string/login2"
         android:layout_height="wrap_content"
         android:id="@+id/btn_login_student"
+        android:backgroundTint="@color/blue"
         android:layout_marginTop="20dp"/>
 
     <TextView

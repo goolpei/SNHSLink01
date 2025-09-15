@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:alpha="1"
+    android:background="@color/white"
+    tools:context=".AdminInterface.AdminDashboard">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textview_dashboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:layout_marginTop="25dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/edittext_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search students..."
+        android:padding="12dp"
+        android:background="@drawable/search_background"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:textSize="16sp"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Refresh Button -->
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh List"
+        android:backgroundTint="@color/blue_accent"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_filter_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:entries="@array/application_status_options"
+        android:padding="8dp"/>
+
+
+    <!-- Student Applications List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_student_applications"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:background="@color/white"/>
+
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:textColor="@color/white"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="40dp"/>
+
+</LinearLayout>

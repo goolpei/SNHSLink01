@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/textview_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student: [Name]"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"/>
+
+    <!-- Current Status Display -->
+    <TextView
+        android:id="@+id/textview_current_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Status: Pending"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <!-- Status Selection -->
+    <RadioGroup
+        android:id="@+id/radiogroup_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accepted"
+            android:textSize="18sp"
+            android:textColor="@color/green"/>
+
+        <RadioButton
+            android:id="@+id/radio_on_hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Hold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"/>
+
+        <RadioButton
+            android:id="@+id/radio_rejected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejected"
+            android:textSize="18sp"
+            android:textColor="@color/red"/>
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/button_save_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Status"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

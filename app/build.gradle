@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -14,7 +15,15 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "IMGBB_API_KEY", "\"f96b60dde2608a32a4614254552f82fa\""
+
     }
+
+    buildFeatures {
+        buildConfig true
+    }
+
 
     buildTypes {
         release {
@@ -34,6 +43,22 @@ dependencies {
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
+    implementation libs.firebase.auth
+    implementation libs.firebase.firestore
+    implementation libs.firebase.database
+
+    implementation libs.photoview
+    implementation libs.glide
+    implementation libs.volley
+    annotationProcessor libs.compiler
+
+    implementation libs.retrofit
+    implementation libs.retrofit2.converter.gson
+
+    implementation libs.cloudinary.android
+
+    implementation libs.firebase.ui.firestore
+
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core

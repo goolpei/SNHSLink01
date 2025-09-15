@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="blue_light">#64B5F6</color> <!-- Light Blue -->
+    <color name="blue_dark">#1976D2</color> <!-- Dark Blue -->
+    <color name="blue_accent">#448AFF</color> <!-- Accent Blue -->
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#4CAF50</color> <!-- Accepted -->
+    <color name="yellow">#FFC107</color> <!-- On Hold -->
+    <color name="red">#F44336</color> <!-- Rejected -->
+    <color name="gray">#9E9E9E</color> <!-- Default -->
+    <color name="blue">#2196F3</color> <!-- Save Button -->
+
+    <color name="orangelink">#FF8A3B</color>
+    <color name="bluelink">#2DA8DC</color>
+
+
 </resources>

@@ -1,4 +1,4 @@
-package StudentInterface;
+package com.example.snhslink.StudentInterface;
 
 import android.os.Bundle;
 

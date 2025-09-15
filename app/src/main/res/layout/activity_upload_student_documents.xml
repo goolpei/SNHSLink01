@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
-    tools:context="StudentInterface.UploadStudentDocuments"
+    tools:context=".StudentInterface.UploadStudentDocuments"
     android:orientation="vertical">
 
     <LinearLayout
@@ -33,17 +33,17 @@
 
 
 
-        <!-- Grade 10 School Report Card -->
+        <!-- Grade 10 School Report Card (Front) -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Grade 10 School Report Card (SF9)"
+            android:text="Grade 10 School Report Card (Front)"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
         <RelativeLayout
-            android:id="@+id/upload_report_card_area"
+            android:id="@+id/upload_report_card_area_front"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:padding="11dp"
@@ -51,14 +51,14 @@
             android:layout_marginBottom="16dp">
 
             <ImageView
-                android:id="@+id/upload_icon_report_card"
+                android:id="@+id/upload_icon_report_card_front"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:contentDescription="Upload icon"
                 android:src="@drawable/ic_upload" />
 
             <ProgressBar
-                android:id="@+id/loading_report_card"
+                android:id="@+id/loading_report_card_front"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:visibility="gone"
@@ -66,11 +66,54 @@
                 style="?android:attr/progressBarStyleSmall" />
 
             <TextView
-                android:id="@+id/status_text_report_card"
+                android:id="@+id/status_text_report_card_front"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tap to upload"
-                android:layout_toEndOf="@id/upload_icon_report_card"
+                android:layout_toEndOf="@id/upload_icon_report_card_front"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"/>
+        </RelativeLayout>
+
+        <!-- Grade 10 School Report Card (Back) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grade 10 School Report Card (Back)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/upload_report_card_area_back"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:background="@drawable/upload_background"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/upload_icon_report_card_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Upload icon"
+                android:src="@drawable/ic_upload" />
+
+            <ProgressBar
+                android:id="@+id/loading_report_card_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:layout_marginTop="2.5dp"
+                style="?android:attr/progressBarStyleSmall" />
+
+            <TextView
+                android:id="@+id/status_text_report_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap to upload"
+                android:layout_toEndOf="@id/upload_icon_report_card_back"
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
                 android:padding="4dp"/>
@@ -180,9 +223,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="SUBMIT"
+        android:backgroundTint="@color/blue"
         android:textSize="15sp"
         android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="40dp"/>
 
     <!-- Admission Form Link -->
     <TextView
@@ -192,6 +236,7 @@
         android:text="To go back to the admission form, click here."
         android:textStyle="italic"
         android:textSize="16sp"
+        android:visibility="gone"
         android:layout_gravity="center"
         android:paddingBottom="40dp"/>
 

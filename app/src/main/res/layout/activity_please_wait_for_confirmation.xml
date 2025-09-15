@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:padding="25dp"
-    tools:context="StudentInterface.PleaseWaitForConfirmation">
+    tools:context=".StudentInterface.DonePleaseWaitForConfirmation">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,6 +66,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="EXIT"
+                android:backgroundTint="@color/blue"
                 android:textSize="14sp"
                 android:gravity="center"
                 android:id="@+id/exit_btn"/>
@@ -75,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:text="GO TO LOGIN"
                 android:textSize="14sp"
+                android:backgroundTint="@color/blue"
                 android:gravity="center"
                 android:id="@+id/go_to_login_btn"
                 android:layout_marginBottom="10dp"/>

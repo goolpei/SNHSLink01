@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".StudentInterface.StudentBasicInformation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Profile Verification Heading -->
+            <TextView
+                android:id="@+id/profile_verification_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_verification"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Divider Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!--  Username -->
+
+            <TextView
+                android:id="@+id/textview_user_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="#555555"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:hint="Username will appear here" />
+
+
+            <!-- Unique ID -->
+
+            <TextView
+                android:id="@+id/textview_user_unique_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:hint="Unique ID will appear here" />
+
+
+
+
+
+            <!-- Last Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/edittext_last_name_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/enter_your_last_name"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+            <!-- First Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/edittext_first_name_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/enter_your_first_name"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+            <!-- Middle Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/middle_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/edittext_middle_name_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/enter_your_middle_name"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/edittext_email_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter your email"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+
+            <!-- Mobile Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/edittext_mobile_number_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter your mobile number"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+            <!-- Birthdate -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthdate"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+            <TextView
+                android:id="@+id/textview_birthdate_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_your_birthdate"
+                android:padding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <!-- Strand Dropdown -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_sagay_shs_strand"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spinner_strand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/strand_options" />
+
+
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <!-- Buttons and Login Link -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clear_entries"
+                android:backgroundTint="@color/blue"
+                android:layout_marginEnd="8dp" />
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:text="@string/continue2" />
+
+        </LinearLayout>
+
+        <!-- Login Page Link -->
+        <TextView
+            android:id="@+id/textview_register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To go back to registration page, click here."
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

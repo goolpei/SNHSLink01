@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="StudentInterface.IntroPage"
+    tools:context=".StudentInterface.IntroPage"
     android:layout_gravity="center"
     android:gravity="center">
 
@@ -15,13 +15,21 @@
         android:orientation="vertical"
         android:gravity="center">
 
+        <ImageView
+            android:layout_width="237dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:src="@drawable/snhslink_no_bg" />
+
         <TextView
             android:id="@+id/intro_welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:letterSpacing="0.01"
-            android:text="@string/welcome_to_campuslink"
+            android:text="Welcome to SNHSLink"
             android:textSize="28sp"
             android:textStyle="bold"/>
 
@@ -29,7 +37,7 @@
             android:id="@+id/appearing_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="40dp"
             android:alpha="0"
             android:text="Tap anywhere to continue"

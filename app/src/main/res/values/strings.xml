@@ -106,6 +106,7 @@
     <string name="first_name4">First Name</string>
     <string name="middle_name4">Middle Name</string>
     <string name="contact_number1">Contact Number</string>
+    <string name="incoming_school_year">Incoming School Year</string>
 
 
     <string-array name="strand_options">
@@ -117,5 +118,13 @@
     <string-array name="grade_level">
         <item>10</item>
     </string-array>
+
+    <string-array name="application_status_options">
+        <item>All</item>
+        <item>Approved</item>
+        <item>Pending</item>
+        <item>Rejected</item>
+    </string-array>
+
 
 </resources>
