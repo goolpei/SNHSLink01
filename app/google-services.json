@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27115220107",
+    "project_id": "snhslink",
+    "storage_bucket": "snhslink.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27115220107:android:56022c5085b6dee99c788e",
+        "android_client_info": {
+          "package_name": "com.example.snhslink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmKrsx1fnTUtyuGpQjL8M1RUbPpQv3p1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
